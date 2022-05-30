@@ -15,6 +15,7 @@ ghrel () {
       do
         echo "### $line ###"
         curl -s https://api.github.com/repos/$line/releases/latest | jq -r '.tag_name, .body'
+	echo ""
       done < "$input"
   else
     curl -s https://api.github.com/repos/$1/releases/latest | jq -r '.tag_name, .body'

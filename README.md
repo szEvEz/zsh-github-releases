@@ -14,9 +14,8 @@ Add the plugin to the list of plugins for oh-my-zsh to load (inside `~/.zshrc`):
 
 ```zshrc
 plugins=(
-    [plugins
-     ...]
     zsh-github-releases
+    ...
 )
 ```
 
